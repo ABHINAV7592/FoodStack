@@ -1,0 +1,19 @@
+﻿@model Hotel
+
+<h2>Add Hotel</h2>
+
+<form asp-action="AddHotel" method="post" enctype="multipart/form-data">
+
+    <input asp-for="hotel_name" placeholder="Hotel Name" class="form-control" />
+
+    <textarea asp-for="hotel_description" class="form-control"></textarea>
+
+    <input asp-for="place_id" placeholder="Place ID" class="form-control" />
+
+    <input asp-for="category_id" placeholder="Category ID" class="form-control" />
+
+    <input type="file" name="file" class="form-control" />
+
+    <button class="btn btn-success">Add Hotel</button>
+
+</form>
